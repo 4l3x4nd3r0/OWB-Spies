@@ -1,0 +1,63 @@
+spriteTypes = {
+	#Operative Traits
+	spriteType = {
+		name = "GFX_trait_operative_frumentarius"
+		texturefile = "gfx/interface/traits/frumentarius_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_intensive_training"
+		texturefile = "gfx/interface/traits/intensive_training_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_smooth_talker"
+		texturefile = "gfx/interface/traits/smooth_talker_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_ninja"
+		texturefile = "gfx/interface/traits/ninja_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_terryfing_presence"
+		texturefile = "gfx/interface/traits/terryfing_presence_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_speech"
+		texturefile = "gfx/interface/traits/negotiator_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_betrayer"
+		texturefile = "gfx/interface/traits/negotiator_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_heavyweight"
+		texturefile = "gfx/interface/traits/heavyweight_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_lockpick"
+		texturefile = "gfx/interface/traits/infiltrator_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_barter"
+		texturefile = "gfx/interface/traits/barter_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_silent_running"
+		texturefile = "gfx/interface/traits/silent_running_trait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_mad_bomber"
+		texturefile = "gfx/interface/traits/mad_bomber_trait.dds"
+	}
+
+}
