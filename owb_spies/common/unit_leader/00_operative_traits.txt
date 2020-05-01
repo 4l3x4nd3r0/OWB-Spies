@@ -300,27 +300,4 @@ leader_traits = {
 		}
 	}
 
-		operative_linguist = {
-
-		}
-		operative_double_agent = {
-
-		}
-	
-		operative_tough = {
-
-		}
-	
-		operative_safe_cracker = {
-
-		}
-	
-		operative_well_groomed = {
-	
-		}
-
-		operative_escape_artist = {
-
-		}
-
 }
