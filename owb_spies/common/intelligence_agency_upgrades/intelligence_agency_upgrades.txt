@@ -10,11 +10,11 @@ branch_intelligence = {
 		sound = Spy_Agency_Intel_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -42,11 +42,11 @@ branch_intelligence = {
 		sound = Spy_Agency_Intel_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -75,11 +75,11 @@ branch_intelligence = {
 		sound = Spy_Agency_Intel_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -108,11 +108,11 @@ branch_intelligence = {
 		sound = Spy_Agency_Intel_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -144,11 +144,11 @@ branch_defense = {
 		sound = Spy_Agency_Defense_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -215,11 +215,11 @@ branch_defense = {
 		sound = Spy_Agency_Defense_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -263,11 +263,11 @@ branch_operation = {
 		sound = Spy_Agency_Operations_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -295,12 +295,12 @@ branch_operation = {
 		sound = Spy_Agency_Operations_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
 			has_tech = communication_engineering_2
-			set_temp_variable = { caps_diff = 150 }
+			set_temp_variable = { caps_diff = 75 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -328,11 +328,11 @@ branch_operation = {
 		sound = Spy_Agency_Operations_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -361,12 +361,12 @@ branch_operation = {
 		sound = Spy_Agency_Operations_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
 			has_tech = demolitions_weaponry_tech
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -400,7 +400,7 @@ branch_operation = {
 
 		available = {
 			has_tech = med_company_tech_1
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -433,11 +433,11 @@ branch_operative = {
 		Sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 200 }
+			set_temp_variable = { caps_diff = 100 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -468,12 +468,12 @@ branch_operative = {
 		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
 			has_tech = spec_ops_equipment_tech_1
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -501,11 +501,11 @@ branch_operative = {
 		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -534,11 +534,11 @@ branch_operative = {
 		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -593,11 +593,11 @@ branch_crypto = {
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 		}
 
 		available = {
-			set_temp_variable = { caps_diff = 200 }
+			set_temp_variable = { caps_diff = 100 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -613,7 +613,7 @@ branch_crypto = {
 
 			complete_effect = {
 				set_country_flag = made_a_purchase_with_caps
-				set_temp_variable = { caps_to_add = 100 }
+				set_temp_variable = { caps_to_add = 200 }
 				multiply_temp_variable = { caps_to_add = -1 }
 				add_caps = yes
 			}
@@ -627,12 +627,12 @@ branch_crypto = {
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 		}
 
 		available = {
 			has_done_agency_upgrade = upgrade_form_department
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -672,13 +672,13 @@ branch_crypto = {
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
 			has_done_agency_upgrade = upgrade_decryption_boost
 			has_tech = electronic_engineering_2
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 80 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -732,12 +732,12 @@ branch_crypto = {
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 		}
 
 		available = {
 			has_done_agency_upgrade = upgrade_form_department
-			set_temp_variable = { caps_diff = 100 }
+			set_temp_variable = { caps_diff = 50 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
@@ -777,14 +777,14 @@ branch_crypto = {
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
 			has_done_agency_upgrade = upgrade_crypto_strength
 			has_tech = electronic_engineering_2
 			has_done_agency_upgrade = upgrade_form_department
-			set_temp_variable = { caps_diff = 200 }
+			set_temp_variable = { caps_diff = 100 }
 			multiply_temp_variable = {
 				caps_diff = -1
 			}
