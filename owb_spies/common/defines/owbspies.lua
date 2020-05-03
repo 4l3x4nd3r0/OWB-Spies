@@ -1,8 +1,9 @@
 --NOperatives
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 3
-NDefines.NOperatives.INTEL_NETWORK_GAIN_RATE_ON_OUT_OF_RANGE = -3.0				-- Amount of network strength lost in a state that has the right controller but is out of range of any operative
+NDefines.NOperatives.INTEL_NETWORK_GAIN_RATE_ON_OUT_OF_RANGE = -2.0				-- Amount of network strength lost in a state that has the right controller but is out of range of any operative
 NDefines.NOperatives.INTEL_NETWORK_GAIN_RATE_ON_WRONG_CONTROLLER = -1.0			-- Amount of network strength lost in a state when it does not have the right controller anymore
 NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 5
+-- Not a lot of factories in the wasteland, if abused it can be toned down.
 NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
     0.25, 	0.0, -- 0 operative for [0, 10)
     0.5,  	10.0, -- 0.5 operative for [10, 50)
