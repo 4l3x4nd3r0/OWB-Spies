@@ -8,7 +8,7 @@ coordinated_strike_scout_target = {
 
 	}
 	equipment = {
-		support_equipment = 100
+		support_equipment = 10
 	}
 }
 
@@ -22,7 +22,7 @@ coordinate_strike_mark_targets = {
 
 	}
 	equipment = {
-		support_equipment = 100
+		support_equipment = 10
 	}
 }
 
@@ -37,7 +37,7 @@ coordinated_strike_sabotage_communications = {
 	}
 
 	equipment = {
-		support_equipment = 100
+		support_equipment = 10
 	}
 }
 
@@ -52,7 +52,7 @@ coordinated_strike_direct_units = {
 	}
 
 	equipment = {
-		support_equipment = 100
+		support_equipment = 10
 	}
 }
 
@@ -67,6 +67,6 @@ coordinated_strike_occupy_bridges = {
 	}
 
 	equipment = {
-		infantry_equipment = 1000
+		infantry_equipment = 100
 	}
 }

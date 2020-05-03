@@ -7,10 +7,7 @@ steal_blueprints_bribe = {
 	requirements = { }
 
 	equipment = {
-		civilian_factories = {
-			amount = 3
-			days = 30
-		}
+
 	}
 }
 
@@ -45,7 +42,7 @@ steal_blueprints_steal_prototype = { #air espionage only (maybe tanks?)
 	icon = "GFX_phase_steal_blueprints_steal_prototype_small"
 
 	equipment = {
-		fighter_equipment = 10
+
 	}
 }
 

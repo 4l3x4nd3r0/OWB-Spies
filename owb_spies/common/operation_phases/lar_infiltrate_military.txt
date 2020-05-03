@@ -7,10 +7,7 @@ infiltrate_military_bribe = {
 	requirements = { }
 
 	equipment = {
-		civilian_factories = {
-			amount = 3
-			days = 30
-		}
+
 	}
 }
 

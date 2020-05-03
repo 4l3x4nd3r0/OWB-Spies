@@ -69,9 +69,6 @@ infiltration_diplomatic = {
 	icon = "GFX_phase_infiltration_diplomatic_small"
 
 	equipment = {
-		civilian_factories = {
-			amount = 1
-			days = 15
-		}
+
 	}
 }

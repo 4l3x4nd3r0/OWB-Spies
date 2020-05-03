@@ -8,7 +8,7 @@ fake_intel_decoy_tanks = {
 	requirements = {  }
 
 	equipment = {
-		support_equipment = 500
+		support_equipment = 50
 	}
 }
 
@@ -20,7 +20,7 @@ fake_intel_radio_deception = {
 	icon = "GFX_phase_fake_intel_radio_deception_small"
 
 	equipment = {
-		support_equipment = 500
+		support_equipment = 50
 	}
 }
 
@@ -44,10 +44,7 @@ fake_intel_press_releases = {
 	icon = "GFX_phase_fake_intel_press_releases_small"
 
 	equipment = {
-		civilian_factories = {
-			amount = 3
-			days = 30
-		}
+
 	}
 }
 
@@ -59,10 +56,7 @@ fake_intel_utilize_double_agents = {
 	icon = "GFX_phase_fake_intel_utilize_double_agents_small"
 
 	equipment = {
-		civilian_factories = {
-			amount = 3
-			days = 30
-		}
+
 	}
 }
 
@@ -74,7 +68,7 @@ fake_intel_plant_evidence = {
 	icon = "GFX_phase_fake_intel_plant_evidence_small"
 
 	equipment = {
-		support_equipment = 250
+		support_equipment = 25
 	}
 }
 

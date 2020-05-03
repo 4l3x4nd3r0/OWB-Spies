@@ -1,0 +1,69 @@
+add_namespace = spy_events
+
+news_event = { #Armory Raided Notice
+	id = spy_events.1
+	title = spy_events.1.t
+	desc = spy_events.1.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = { 
+		name = spy_events.1.a 
+	}
+}
+
+country_event = { #Big Mountain Expedition
+	id = spy_events.2
+	title = spy_events.2.t
+	desc = spy_events.2.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = spy_events.2.a
+		country_event = { id = spy_events.3 days = 1 }
+	}
+
+}
+
+country_event = { #The Think Tank
+	id = spy_events.3
+	title = spy_events.3.t
+	desc = spy_events.3.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = { #Get to know the scientists
+		name = spy_events.3.a
+		country_event = { id = spy_events.4 days = 1 }
+		hidden_effect = {
+			set_country_flag = big_mountain_scientists_respected
+		}
+	}
+
+	option = { #Ignore the brains and explore
+		name = spy_events.3.b
+		country_event = { id = spy_events.1 days = 1 }
+		hidden_effect = {
+			set_country_flag = big_mountain_scientists_disrespected
+		}
+	}
+}
+
+
+country_event = { #Sierra Madre
+	id = spy_events.10
+	title = spy_events.10.t
+	desc = spy_events.10.d
+	picture = GFX_event_MOJ_sierra_madre
+
+	is_triggered_only = yes
+
+	option = {
+		name = spy_events.10.a
+		country_event = { id = spy_events.11 days = 1 }
+	}
+}

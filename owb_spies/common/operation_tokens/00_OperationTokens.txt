@@ -27,6 +27,7 @@ token_civilian = {
 	intel_source = civilian
 	intel_gain = 10
 }
+
 token_raider = {
 	name = OPERATION_TOKEN_INFILTRATED_CIVILIAN
 	desc = OPERATION_TOKEN_INFILTRATED_CIVILIAN_DESC
@@ -57,4 +58,14 @@ token_resistance_contacts = {
 	intel_gain = 5
 
 	# TODO: should we boost resistance growth?
+}
+
+token_smuggler = {
+	name = OPERATION_TOKEN_SMUGGLER
+	desc = OPERATION_TOKEN_SMUGGLER_DESC
+	icon = GFX_infiltrate_civilian_bg
+	text_icon = GFX_text_infiltrate_civilian_token
+
+	intel_source = civilian
+	intel_gain = 10
 }

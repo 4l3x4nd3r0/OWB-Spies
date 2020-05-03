@@ -1,0 +1,34 @@
+check_the_crashed_satellite = {
+	name = check_the_crashed_satellite
+	desc = check_the_crashed_satellite_desc
+	outcome = check_the_crashed_satellite_outcome
+	picture = "GFX_phase_infiltration_border"
+	icon = "GFX_phase_infiltration_border_small"
+	requirements = { }
+	equipment = {}
+}
+
+explore_big_mountain = {
+	name = explore_big_mountain
+	desc = explore_big_mountain_desc
+	outcome = explore_big_mountain_outcome
+	picture = "GFX_phase_infiltrate_military_bribe"
+	icon = "GFX_phase_infiltrate_military_bribe_small"
+	requirements = { }
+
+	equipment = {
+
+	}
+}
+
+leave_big_mountain = {
+	name = leave_big_mountain
+	desc = leave_big_mountain_desc
+	outcome = leave_big_mountain_outcome
+	risk_extra = leave_big_mountain_outcome_fail
+	picture = "GFX_phase_exfiltration_border"
+	icon = "GFX_phase_exfiltration_border_small"
+	requirements = {}
+
+	equipment = {}
+}
