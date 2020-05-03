@@ -121,3 +121,5 @@ intelligence_agency = {
 	default = { always = yes }
 	available = { always = yes }
 }
+
+# Note for Alex, add more as ideas come!
