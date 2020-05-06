@@ -8,6 +8,16 @@ sneak_drugs_past_the_border = {
 	equipment = {}
 }
 
+sneak_slaves_past_the_border = {
+	name = sneak_slaves_past_the_border
+	desc = sneak_slaves_past_the_border_desc
+	outcome = sneak_slaves_past_the_border_outcome
+	picture = "GFX_phase_infiltration_border"
+	icon = "GFX_phase_infiltration_border_small"
+	requirements = { }
+	equipment = {}
+}
+
 make_underworld_connections = {
 	name = make_underworld_connections
 	desc = make_underworld_connections_desc
@@ -30,10 +40,21 @@ build_a_distribution_network = {
 	equipment = {}
 }
 
+hold_secret_auctions = {
+	name = hold_secret_auctions
+	desc = hold_secret_auctions_desc
+	outcome = hold_secret_auctions_outcome
+	picture = "GFX_phase_infiltrate_military_bribe"
+	icon = "GFX_phase_infiltrate_military_bribe_small"
+	requirements = { }
+
+	equipment = {}
+}
+
 distribute_the_drugs_to_distribuitors = {
-	name = sneak_drugs_past_the_border
-	desc = sneak_drugs_past_the_border_desc
-	outcome = sneak_drugs_past_the_border_outcome
+	name = distribute_the_drugs_to_distribuitors
+	desc = distribute_the_drugs_to_distribuitors_desc
+	outcome = distribute_the_drugs_to_distribuitors_outcome
 	picture = "GFX_phase_infiltrate_military_bribe"
 	icon = "GFX_phase_infiltrate_military_bribe_small"
 	requirements = { }
