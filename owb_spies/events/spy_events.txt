@@ -46,24 +46,659 @@ country_event = { #The Think Tank
 
 	option = { #Ignore the brains and explore
 		name = spy_events.3.b
-		country_event = { id = spy_events.1 days = 1 }
+		country_event = { id = spy_events.4 days = 1 }
 		hidden_effect = {
 			set_country_flag = big_mountain_scientists_disrespected
 		}
 	}
 }
 
+country_event = { # X-2 Research Facility
+	id = spy_events.4
+	title = spy_events.4.t
+	desc = spy_events.4.d
+	picture = GFX_event
 
-country_event = { #Sierra Madre
+	is_triggered_only = yes
+
+	option = { #Explore the facility
+		name = spy_events.4.a
+		country_event = { id = spy_events.5 days = 1 }
+		add_manpower = -25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -50
+		}
+		add_tech_bonus = {
+			bonus = 1.25
+			uses = 1
+			ahead_reduction = 2
+			category = radar_tech
+		}
+		hidden_effect = {
+			set_country_flag = x2explored
+		}
+	}
+
+	option = { #Fuck this shit
+		name = spy_events.4.b
+		country_event = { id = spy_events.5 days = 1 }
+	}
+}
+
+country_event = { #Higgs
+	id = spy_events.5
+	title = spy_events.5.t
+	desc = spy_events.5.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = { #Learn about the Scientists
+		name = spy_events.5.a
+		country_event = { id = spy_events.6 days = 1 }
+		hidden_effect = {
+			set_country_flag = higgsinformation
+		}
+	}
+
+	option = { #loot the place
+		name = spy_events.5.b
+		country_event = { id = spy_events.6 days = 1 }
+		capital_scope = {
+			add_resource = {
+				type = metal
+				amount = 12
+			}
+			add_resource = {
+				type = circuitry
+				amount = 8
+			}
+			add_resource = {
+				type = composites
+				amount = 6
+			}
+			add_resource = {
+				type = advanced
+				amount = 10
+			}
+		}
+	}
+}
+
+country_event = { #Y-17 Medical Facility
+	id = spy_events.6
+	title = spy_events.6.t
+	desc = spy_events.6.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = spy_events.6.a
+		add_manpower = -25 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -50
+		}
+		add_tech_bonus = {
+			bonus = 1.25
+			uses = 1
+			ahead_reduction = 2
+			category = support_medical_tech_category
+		}
+		country_event = { id = spy_events.7 days = 1 }
+		hidden_effect = {
+			set_country_flag = y17explored
+		}
+	}
+
+	option = {
+		name = spy_events.6.b
+		country_event = { id = spy_events.7 days = 1 }
+	}
+}
+
+country_event = { #X8 & X13 Tests
+	id = spy_events.7
+	title = spy_events.7.t
+	desc = spy_events.7.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = { #X8 Only
+		name = spy_events.7.a
+		add_manpower = -25 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -50
+		}
+		hidden_effect = {
+			set_country_flag = x8explored
+		}
+		country_event = { id = spy_events.8 days = 1 }
+	}
+
+	option = { #X13 Only
+		name = spy_events.7.b
+		add_manpower = -25 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -50
+		}
+		country_event = { id = spy_events.8 days = 1 }
+		hidden_effect = {
+			set_country_flag = x13explored
+		}
+	}
+
+	option = { #Both X8 and X13
+		name = spy_events.7.c
+		add_manpower = -50 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+		}
+		add_tech_bonus = {
+			bonus = 1.25
+			uses = 1
+			ahead_reduction = 2
+			category = support_demolitions_tech_category
+		}
+		country_event = { id = spy_events.8 days = 1 }
+		hidden_effect = {
+			set_country_flag = x13explored
+			set_country_flag = x8explored
+		}
+	}
+
+	option = {
+		name = spy_events.7.e
+		country_event = { id = spy_events.8 days = 1 }
+	}
+}
+
+country_event = { #X7
+	id = spy_events.8
+	title = spy_events.8.t
+	desc = spy_events.8.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = spy_events.8.a
+		add_manpower = -50 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+		}
+
+		country_event = { id = spy_events.9 days = 1 }
+		hidden_effect = {
+			set_country_flag = x7explored
+		}
+	}
+}
+
+country_event = { #X43/Forbbiden Dome Dr.Mobius
+	id = spy_events.9
+	title = spy_events.9.t
+	desc = spy_events.9.d
+
+	is_triggered_only = yes
+
+	option = { #Leave Mobius to continue his job of keeping the Think Tank locked down.
+		name = spy_events.9.a
+		add_tech_bonus = {
+			bonus = 1.25
+			uses = 4
+			ahead_reduction = 2
+			category = robotics_tech_category
+		}
+		add_timed_idea = { idea = think_tank days = 365 }
+		custom_effect_tooltip = leave_mobius.tt
+	}
+
+	option = { #Work with Mobius to convince the Think Tank
+		name = spy_events.9.b
+		trigger = {
+			has_country_flag = big_mountain_scientists_respected
+		}
+		add_tech_bonus = {
+			bonus = 1.25
+			uses = 1
+			ahead_reduction = 2
+			category = robotics_tech_category
+		}
+		hidden_effect = {
+			set_country_flag = side_with_mobius
+		}
+		country_event = { id = spy_events.10 days = 1 }
+	}
+
+	option = { #Kill Mobius
+		name = spy_events.9.c
+		add_tech_bonus = {
+			bonus = 1.25
+			uses = 2
+			ahead_reduction = 2
+			category = robotics_tech_category
+		}
+		add_manpower = -100 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -200
+		}
+		hidden_effect = {
+			set_country_flag = killed_mobius
+			set_global_flag = big_mountain_complete
+		}
+		custom_effect_tooltip = disable_big_mt.tt
+		country_event = { id = spy_events.10 days = 1 }
+	}
+}
+
+country_event = { #Old World Blues Ending
 	id = spy_events.10
 	title = spy_events.10.t
 	desc = spy_events.10.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = { #The Think Tank remains trapped and can accessed by others, Mobius continues to do his job.
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = big_mountain_scientists_respected
+					has_country_flag = side_with_mobius
+				}
+
+				AND = {
+					has_country_flag = x2explored
+					has_country_flag = y17explored
+					has_country_flag = x13explored
+					has_country_flag = x7explored
+					has_country_flag = x8explored
+					NOT = {
+						has_country_flag = killed_mobius
+					}
+				}
+			}
+		}
+		name = spy_events.10.a
+		add_timed_idea = { idea = think_tank days = 365 }
+	}
+
+	option = { #Mobius is dead, Think Tank closes its door to the outside, however they work for you
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = x2explored
+					has_country_flag = y17explored
+					has_country_flag = x13explored
+					has_country_flag = x7explored
+					has_country_flag = x8explored
+				}
+				has_country_flag = higgsinformation
+			}
+			has_country_flag = killed_mobius
+		}
+		name = spy_events.10.b
+		add_idea = think_tank
+		#if = { 
+		#	limit = { NOT = { has_tech = settled_civilization } } 
+		#	set_technology = { settled_civilization = 1 }
+		#}
+		custom_effect_tooltip = disable_big_mt.tt
+	}
+
+	option = { #Kill the Brains in Jars, loot the place.
+		trigger = {
+			OR = {
+				has_country_flag = big_mountain_scientists_disrespected
+				has_country_flag = side_with_mobius
+				has_country_flag = killed_mobius
+			}
+		}
+		name = spy_events.10.c
+		capital_scope = {
+			add_resource = {
+				type = metal
+				amount = 60
+			}
+			add_resource = {
+				type = circuitry
+				amount = 40
+			}
+			add_resource = {
+				type = composites
+				amount = 30
+			}
+			add_resource = {
+				type = advanced
+				amount = 20
+			}
+		}
+		hidden_effect = {
+			set_global_flag = big_mountain_complete
+		}
+		custom_effect_tooltip = disable_big_mt.tt
+	}
+}
+
+country_event = { #Sierra Madre
+	id = spy_events.11
+	title = spy_events.11.t
+	desc = spy_events.11.d
 	picture = GFX_event_MOJ_sierra_madre
 
 	is_triggered_only = yes
 
 	option = {
-		name = spy_events.10.a
+		name = spy_events.11.a
 		country_event = { id = spy_events.11 days = 1 }
+	}
+}
+
+country_event = { #Meeting Dean Domino
+	id = spy_events.12
+	title = spy_events.12.t
+	desc = spy_events.12.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = { #Recruit Dean
+		name = spy_events.12.a
+		set_temp_variable = { caps_to_add = -200 }
+		add_caps = yes
+		hidden_effect = {
+			set_country_flag = dean_domino
+		}
+		country_event = { id = spy_events.13 days = 1 }
+	}
+
+	option = { #A Ghoul? No thanks!
+		name = spy_events.12.b
+		country_event = { id = spy_events.13 days = 1 }
+	}
+
+	option = { #Bribe the Ghoul for information
+		name = spy_events.12.c
+		set_temp_variable = { caps_to_add = -50 }
+		add_caps = yes
+		hidden_effect = {
+			set_country_flag = dean_info
+		}
+		country_event = { id = spy_events.13 days = 1 }
+	}
+}
+
+country_event = { #Activate the Gala Event
+	id = spy_events.13
+	title = spy_events.13.t
+	desc = spy_events.13.d
+
+	is_triggered_only = yes
+
+	option = { #Navigate the Villa with the help of Dean
+		trigger = {
+			has_country_flag = dean_domino
+		}
+		name = spy_events.13.a
+		hidden_effect = {
+			set_country_flag = helped_by_dean
+		}
+		country_event = { id = spy_events.14 days = 1 }
+	}
+
+	option = { #Clear the Villa without information/help
+		name = spy_events.13.b
+		add_manpower = -200 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -400
+		}
+		hidden_effect = {
+			set_country_flag = refused_dean
+		}
+		country_event = { id = spy_events.14 days = 1 }
+	}
+
+	option = { #Navigate the Villa with information
+		trigger = {
+			has_country_flag = dean_info
+		}
+		name = spy_events.13.c
+		add_manpower = -50 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+		}
+		hidden_effect = {
+			set_country_flag = refused_dean
+		}
+		country_event = { id = spy_events.14 days = 1 }
+	}
+}
+
+country_event = { #The Sierra Madre Casino
+	id = spy_events.14
+	title = spy_events.14.t
+	desc = spy_events.14.d
+
+	is_triggered_only = yes
+
+	option = { #Navigate the Casino. Dean picks up a holotape on the way to the Vault.
+		trigger = {
+			has_country_flag = dean_domino
+			NOT = {
+				has_country_flag = refused_dean
+			}
+		}
+		name = spy_events.14.a
+		hidden_effect = {
+			set_country_flag = vera_holotape
+		}
+		country_event = { id = spy_events.15 days = 1 }
+	}
+
+	option = { #Clear the Casino out room by room
+		name = spy_events.14.b
+		add_manpower = -200 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -400
+		}
+		hidden_effect = {
+			set_country_flag = vera_holotape
+		}
+		country_event = { id = spy_events.15 days = 1 }
+	}
+
+	option = { #Go straight to the Vault
+		name = spy_events.14.b
+		add_manpower = -50 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -100
+		}
+		country_event = { id = spy_events.15 days = 1 }
+	}
+}
+
+country_event = { #Sierra Madre Vault
+	id = spy_events.15
+	title = spy_events.15.t
+	desc = spy_events.15.d
+
+	is_triggered_only = yes
+
+	option = { #Access the Vault the right way
+		trigger = {
+				has_country_flag = vera_holotape
+		}
+		name = spy_events.15.a
+		country_event = { id = spy_events.16 days = 1 }
+	}
+
+	option = { #Access the Vault the kaboom way.
+		trigger = {
+			NOT = {
+				has_country_flag = vera_holotape
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = demolitions_equipment
+			amount = -200
+		}
+		name = spy_events.15.b
+		country_event = { id = spy_events.16 days = 1 }
+	}
+}
+
+country_event = { #The Heist of the Century
+	id = spy_events.16
+	title = spy_events.16.t
+	desc = spy_events.16.d
+
+	is_triggered_only = yes
+
+	option = { #Dean steals the treasure
+		trigger = {
+			has_country_flag = refused_dean
+		}
+		name = spy_events.16.a
+		add_ideas = let_go
+	}
+
+	option = { #Give Dean his cut and let him leave
+		trigger = {
+			has_country_flag = dean_domino
+		}
+		name = spy_events.16.b
+		set_temp_variable = { caps_to_add = 30000 }
+		add_caps = yes
+	}
+
+	option = { #Give Dean a bigger share and invite him to work for you
+		trigger = {
+			has_country_flag = dean_domino
+			has_dlc = "La Resistance"
+		}
+		name = spy_events.16.c
+		add_ideas = sierra_madre_riches
+		set_temp_variable = { caps_to_add = 15000 }
+		add_caps = yes
+		create_operative_leader = {
+			name = "Dean Domino"
+			portrait_path = "gfx/leaders/"
+			skill = 2
+			traits = { operative_smooth_talker operative_speech operative_intensive_training }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { VEG }
+		}
+	}
+}
+
+
+country_event = {
+	id = spy_events.100
+	title = spy_events.100.t
+	desc = spy_events.100.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			NOT = {
+				has_idea = chems_legalised
+			}
+		}
+		name = spy_events.100.a
+		random_list = {
+			10 = { #Find all the drugs
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 250
+				}
+				add_political_power = 100
+			}
+
+			30 = { #Find some drugs
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 50
+				}
+				add_political_power = 50
+				add_timed_idea = { idea = limited_chem_usage  days = 100 }
+			}
+
+			60 = { #Do not find any drugs... 
+				add_political_power = -50
+				add_timed_idea = { idea = rampant_chem_usage  days = 150 }
+			}
+		}
+	}
+
+	option = { #People deserve to take a shot once in a while to relax, it is fine as long as it doesn't go wild.
+		name = spy_events.100.b
+		add_timed_idea = { idea = rampant_chem_usage  days = 200 }
+	}
+}
+
+country_event = {
+	id = spy_events.101
+	title = spy_events.101.t
+	desc = spy_events.101.d
+	picture = GFX_event
+
+	is_triggered_only = yes
+
+	option = { #Free the slaves
+		trigger = {
+			NOT = {
+				has_country_flag = slavery_allowed
+			}
+		}
+		name = spy_events.101.a
+		random_list = {
+			10 = { #Slaves found and freed
+				add_political_power = 100
+			}
+
+			90 = { #Slaves not found
+				add_political_power = -50
+				add_timed_idea = { idea = private_slavery  days = 120 }
+			}
+		}
+	}
+
+	option = { #Save the slaves but put them in debt for rescuing them so they go back to slavery. Classic.
+		trigger = {
+			has_idea = indentured_servitude
+		}
+		name = spy_events.101.b
+		random_list = {
+			40 = {
+				add_to_variable = {
+					slave_number_display = 50
+				}
+			}
+
+			60 = {
+				add_timed_idea = { idea = private_slavery  days = 120 }
+			}
+		}
+	}
+
+	option = {
+		name = spy_events.101.c
+		add_timed_idea = { idea = private_slavery  days = 200 }
 	}
 }
