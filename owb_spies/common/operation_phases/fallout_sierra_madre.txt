@@ -1,0 +1,34 @@
+find_the_sierra_madre = {
+	name = find_the_sierra_madre
+	desc = find_the_sierra_madre_desc
+	outcome = find_the_sierra_madre_outcome
+	picture = "GFX_phase_infiltration_border"
+	icon = "GFX_phase_infiltration_border_small"
+	requirements = { }
+	equipment = {}
+}
+
+explore_the_sierra_madre = {
+	name = explore_the_sierra_madre
+	desc = explore_the_sierra_madre_desc
+	outcome = explore_the_sierra_madre_outcome
+	picture = "GFX_phase_infiltrate_military_bribe"
+	icon = "GFX_phase_infiltrate_military_bribe_small"
+	requirements = { }
+
+	equipment = {
+
+	}
+}
+
+leave_sierra_madre = {
+	name = leave_sierra_madre
+	desc = leave_sierra_madre_desc
+	outcome = leave_sierra_madre_outcome
+	risk_extra = leave_sierra_madre_outcome_fail
+	picture = "GFX_phase_exfiltration_border"
+	icon = "GFX_phase_exfiltration_border_small"
+	requirements = {}
+
+	equipment = {}
+}
