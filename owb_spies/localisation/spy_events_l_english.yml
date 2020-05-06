@@ -6,12 +6,13 @@
     spy_events.2.t:0 "Big Mountain Expedition"
     spy_events.2.d:0 "In the years before the Great War, Big Mountain had been the home to the brightest minds of the 21st century. Scientists of vision were drawn to the facility to tackle the greatest technological challenges of the era. They sought to create a new world, fueled by technology, for the benefit of all mankind. Sonic emitters, space age alloys, DNA hybridization, force field particle research, Auto-Doc advances in cranial, cardiac, and trauma surgery... the hopes and dreams of a century became realities in the electronic forges of Big Mountain. The nucleus of this research was the Dome, a huge stone facility that held the labs of every science known to man. It was a think tank where no problem could not be solved, where no question could not be answered. The Great War brought a new energy to Big Mountain and its scientists. Equations and calculations marched endlessly across chalkboards and computer terminals toward one solution: Winning the war. On the night of October 23rd, 2077, the scientists received an answer that put all their questions to rest. In the aftermath, Big Mountain's silent experiments went to sleep, their creators slowly dying in the new world that had been left behind. And the great stone in the middle of the Big Empty lay untouched, filled with countless technological wonders..."
     spy_events.2.a:0 "Wonders that, in the end, had been answers to the wrong question."
-    spy_events.10.t:0 "Sierra Madre"
-    spy_events.10.d:0 "Left my heart in the Sierra Madre. Gone to Sierra Madre. I wish I was at the Sierra Madre. Messages like these can be found scribbled across the Mojave, left by fools young and old alike chasing a fleeting dream. If you don't find a poster, you find a postcard. If it's not a postcard then it's the broadcast — anything can pull you in, but once you hear that voice you're hooked. It was no secret that many a prospector had died exploring the Sierra Madre for salvage, and those who survived spun tales of a city akin to El Dorado. Rumours of mysterious technology unseen anywhere else drove this search party forward. \"There's treasures there, sleeping, some, awake.\""
-    spy_events.10.a:0 "Time to Begin Again"
+    spy_events.11.t:0 "Sierra Madre"
+    spy_events.11.d:0 "Left my heart in the Sierra Madre. Gone to Sierra Madre. I wish I was at the Sierra Madre. Messages like these can be found scribbled across the Mojave, left by fools young and old alike chasing a fleeting dream. If you don't find a poster, you find a postcard. If it's not a postcard then it's the broadcast — anything can pull you in, but once you hear that voice you're hooked. It was no secret that many a prospector had died exploring the Sierra Madre for salvage, and those who survived spun tales of a city akin to El Dorado. Rumours of mysterious technology unseen anywhere else drove this search party forward. \"There's treasures there, sleeping, some, awake.\""
+    spy_events.11.a:0 "Time to Begin Again"
     #Tooltips
     big_mountain_visited:0 "Visited Big Mountain."
-    big_mountain_looted:0 "Big Mountain Looted"
+    big_mountain_completed:0 "Big Mountain Completed"
     sierra_madre_visited:0 "Visited the Sierra Madre"
+    sierra_madre_looted:0 "Looted the Sierra Madre"
 
 
