@@ -28,7 +28,7 @@
   operation_steal_enemy_supplies:0 "Steal Enemy Supplies"
   operation_steal_enemy_supplies_desc:0 "Having infiltrated the army we are able to siphon enemy supplies for our own use."
   operation_big_mountain_expedition:0 "Big Empty Expedition"
-  operation_big_mountain_expeditione_desc:0 "Some wastelanders speak of an pre-war goverment research facility which they call Big Empty. They are just rumours, some may say, however it is our duty to find if these rumours are true or not. We will start with listening to this mysterious broadcast and inspecting the fallen satelite."
+  operation_big_mountain_expedition_desc:0 "Some wastelanders speak of an pre-war goverment research facility which they call Big Empty. They are just rumours, some may say, however it is our duty to find if these rumours are true or not. We will start with listening to this mysterious broadcast and inspecting the fallen satelite."
   check_the_crashed_satellite:0 "Check the Crashed Satelite"
   check_the_crashed_satellite_desc:0 "Rumours are that in the Mojave Wasteland there is a strange satellite. A through inspection of the satelite should reveal information about the Big Empty."
   check_the_crashed_satellite_outcome:0 "The satellite used to belong to the Big Mountain Research and Development Centre and has given us the exact location of the facility."
