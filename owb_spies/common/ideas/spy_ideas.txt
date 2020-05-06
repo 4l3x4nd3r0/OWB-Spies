@@ -1,0 +1,97 @@
+ideas = {
+	country = {
+		limited_chem_usage = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.05
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+
+		rampant_chem_usage = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.10
+				industrial_capacity_factory = -0.6
+				stability_factor = -0.10
+				army_org_factor = -0.10
+			}
+		}
+
+		private_slavery = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+
+		think_tank = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+
+		let_go = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.10
+			}
+		}
+
+		sierra_madre_riches = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.3
+				army_core_defence_factor = 0.30
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+}
