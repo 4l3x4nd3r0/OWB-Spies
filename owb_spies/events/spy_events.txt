@@ -347,7 +347,7 @@ country_event = { #Old World Blues Ending
 			has_country_flag = killed_mobius
 		}
 		name = spy_events.10.b
-		add_idea = think_tank
+		add_ideas = think_tank
 		#if = { 
 		#	limit = { NOT = { has_tech = settled_civilization } } 
 		#	set_technology = { settled_civilization = 1 }
@@ -566,7 +566,9 @@ country_event = { #The Heist of the Century
 	desc = spy_events.16.d
 
 	is_triggered_only = yes
-
+	immediate = {
+		set_global_flag = sierra_madre_looted
+	}
 	option = { #Dean steals the treasure
 		trigger = {
 			has_country_flag = refused_dean

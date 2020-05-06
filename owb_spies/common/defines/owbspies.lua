@@ -5,11 +5,11 @@ NDefines.NOperatives.INTEL_NETWORK_GAIN_RATE_ON_WRONG_CONTROLLER = -1.0			-- Amo
 NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 5
 -- Not a lot of factories in the wasteland, if abused it can be toned down.
 NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {
-    0.25, 	0.0, -- 0 operative for [0, 10)
+    0.0, 	0.0, -- 0 operative for [0, 10)
     0.5,  	10.0, -- 0.5 operative for [10, 50)
     1.0, 	50.0, -- 1.0 operative for >= 50
 }
-NDefines.NOperatives.OPERATIVE_BASE_INTEL_NETWORK_GAIN = 1
+NDefines.NOperatives.OPERATIVE_BASE_INTEL_NETWORK_GAIN = 0.8
 NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 10					-- The minimum value of the highest VP in a state to consider the state as a valid target to start building an intel network
 NDefines.NOperatives.OPERATIVE_CAPTURE_DURATION_IN_DAYS = 3*30
 NDefines.NOperatives.OPERATIVE_MIN_DAYS_FORCED_INTO_HIDING = 7				-- Minimum number of days an operative can be forced into hiding. Applied after modifiers. Can be zero.

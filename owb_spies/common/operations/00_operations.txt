@@ -3418,8 +3418,8 @@ operation_create_smuggling_ring = {
 operation_smuggle_drugs = { 
 	icon = GFX_operations_infiltrate_civilian_govt
 	map_icon = GFX_operations_infiltrate_civilian_govt_map
-	name = smuggle_drugs
-	desc = smuggle_drugs_desc
+	name = operation_smuggle_drugs
+	desc = operation_smuggle_drugs_desc
 	priority = 1
 
 	days = 60
@@ -3519,8 +3519,8 @@ operation_smuggle_drugs = {
 operation_smuggle_slaves = { 
 	icon = GFX_operations_infiltrate_civilian_govt
 	map_icon = GFX_operations_infiltrate_civilian_govt_map
-	name = smuggle_slaves
-	desc = smuggle_slaves_desc
+	name = operation_smuggle_slaves
+	desc = operation_smuggle_slaves_desc
 	priority = 1
 
 	days = 60
