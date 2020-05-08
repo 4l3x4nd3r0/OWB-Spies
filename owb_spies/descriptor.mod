@@ -1,9 +1,9 @@
-version="0.1"
+name="OWB - Covert Operations"
 dependencies={
 	"Old World Blues"
 }
 tags={
-	"Alternative History"
+	"Events"
 }
-name="OWB - Spies"
+picture="Thumbnail.png"
 supported_version="1.9.*"

@@ -3239,25 +3239,30 @@ operation_sierra_madre_expedition = {
 
 	visible = {
 		OR = {
-			AND = {
-				any_country = { controls_state = 211 OR = { is_in_faction_with = ROOT is_subject_of = ROOT } }
-				network_national_coverage = {
-					target = FROM
-					value > 0
-				}
-			}
-			
-			AND = {
-				FROM = {
-					any_country = { controls_state = 211 }
-				}
-				network_strength = {
-					target = FROM
-					value > 0
-					state = 211
-				}
-			}
-		}
+            AND = {
+                any_country = {
+                    controls_state = 211
+                    OR = {
+                        is_in_faction_with = ROOT
+                        is_subject_of = ROOT
+                    }
+                }
+                network_national_coverage = {
+                    target = FROM
+                    value > 0
+                }
+            }
+            AND = {
+                FROM = {
+                    controls_state = 211
+                }
+                network_strength = {
+                    target = FROM
+                    value > 0
+                    state = 211
+                }
+            }
+        }
 		NOT = {
 			has_country_flag = sierra_madre_visited
 			has_global_flag = sierra_madre_looted

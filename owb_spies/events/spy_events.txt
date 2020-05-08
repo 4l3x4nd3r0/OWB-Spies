@@ -240,6 +240,11 @@ country_event = { #X7
 			set_country_flag = x7explored
 		}
 	}
+
+	option = {
+		name = spy_events.8.b
+		country_event = { id = spy_events.9 days = 1 }
+	}
 }
 
 country_event = { #X43/Forbbiden Dome Dr.Mobius
@@ -399,7 +404,7 @@ country_event = { #Sierra Madre
 
 	option = {
 		name = spy_events.11.a
-		country_event = { id = spy_events.11 days = 1 }
+		country_event = { id = spy_events.12 days = 1 }
 	}
 }
 
@@ -520,7 +525,7 @@ country_event = { #The Sierra Madre Casino
 	}
 
 	option = { #Go straight to the Vault
-		name = spy_events.14.b
+		name = spy_events.14.c
 		add_manpower = -50 
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
